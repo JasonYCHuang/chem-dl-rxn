@@ -1,4 +1,4 @@
-# INSTALL
+# INSTALL SERVER
 
 
 ```bash
