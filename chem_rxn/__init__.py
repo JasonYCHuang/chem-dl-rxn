@@ -5,7 +5,7 @@ from flask import Flask
 import chem_rxn.load_models as lm
 
 
-OUTPUT_COUNT = 10
+OUTPUT_COUNT = 5
 
 
 def create_app(test_config=None):
