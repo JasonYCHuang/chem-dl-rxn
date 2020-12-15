@@ -3,7 +3,9 @@
 
 This repository containing [1] training deep learning models [2] a flask inference server.
 
-We use the similar method in this [paper](https://pubs.acs.org/doi/10.1021/acscentsci.9b00576).
+We use the similar methods as these publications:
+- [Retrosynthesis](https://pubs.acs.org/doi/10.1021/acscentsci.7b00303)
+- [Reaction Prediction](https://pubs.acs.org/doi/10.1021/acscentsci.9b00576)
 
 
 ### 1. Training deep learning models
@@ -38,4 +40,4 @@ Dataset of retrosynthesis
 
 Accuracy of reaction prediction = 72.2%
 
-Accuracy of retrosynthesis = 41.2% 
+Accuracy of retrosynthesis = 41.2%

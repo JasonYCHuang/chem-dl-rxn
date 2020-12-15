@@ -21,12 +21,12 @@ $ cd ..
 ```
 
 
-# Get `chem-rxn-app`
+# Get `chem-dl-rxn`
 
 
 ```bash
-$ git clone git@github.com:JasonYCHuang/chem-rxn-app.git
-$ cd chem-rxn-app
+$ git clone git@github.com:JasonYCHuang/chem-dl-rxn.git
+$ cd chem-dl-rxn
 $ pip install -r requirements.txt
 ```
 
