@@ -8,6 +8,6 @@ class ForwardModel:
     @classmethod
     def infer(cls, reactants):
         ans = translate_top_k(
-            current_app.forward_model, reactants, k=5
+            current_app.forward_model, reactants, k=current_app.output_count
         )
         return [decorate_svg(a) for a in ans]

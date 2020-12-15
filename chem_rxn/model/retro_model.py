@@ -8,6 +8,6 @@ class RetroModel:
     @classmethod
     def infer(cls, products):
         ans = translate_top_k(
-            current_app.retro_model, products, k=5
+            current_app.retro_model, products, k=current_app.output_count
         )
         return [decorate_svg(a) for a in ans]

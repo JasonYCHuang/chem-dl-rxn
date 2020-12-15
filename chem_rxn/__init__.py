@@ -5,6 +5,9 @@ from flask import Flask
 import chem_rxn.load_models as lm
 
 
+OUTPUT_COUNT = 5
+
+
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
@@ -26,6 +29,8 @@ def create_app(test_config=None):
     app.forward_model = forward_model
     retro_model = lm.load_retro_model()
     app.retro_model = retro_model
+
+    app.output_count = OUTPUT_COUNT
 
     @app.route('/ping')
     def ping():

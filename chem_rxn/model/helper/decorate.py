@@ -1,15 +1,15 @@
+from flask import current_app
+
 from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import rdDepictor
-
-OUTPUT_COUNT = 5
 
 
 def decorate_svg(outcomes):
     result = []
     rank = 1
     for smis in outcomes:
-        if rank > OUTPUT_COUNT:
+        if rank > current_app.output_count:
             break
 
         ms = [Chem.MolFromSmiles(smi) for smi in smis.split('.')]
